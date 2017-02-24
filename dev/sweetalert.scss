@@ -24,14 +24,14 @@ body.stop-scrolling {
 }
 
 .sweet-alert {
-  $width: 478px;
-  $padding: 17px;
+  $width: 400px;
+  $padding: 10px;
 
   background-color: white;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   width: $width;
   padding: $padding;
-  border-radius: 5px;
+  border-radius: 4px;
   text-align: center;
 
   position: fixed;
@@ -55,14 +55,14 @@ body.stop-scrolling {
 
   h2 {
     color: #575757;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     font-weight: 600;
     text-transform: none;
     position: relative;
-    margin: 25px 0;
+    margin: 15px 0;
     padding: 0;
-    line-height: 40px;
+    line-height: 30px;
     display: block;
   }
 
@@ -220,8 +220,8 @@ body.stop-scrolling {
   }
 
   button {
-    $btnBlue: #8CD4F5;
-    $btnGray: #C1C1C1;
+    $btnBlue: #3c8dbc;
+    $btnGray: #f4f4f4;
 
     background-color: $btnBlue;
     color: white;
@@ -288,13 +288,14 @@ body.stop-scrolling {
   }
 
   .sa-icon {
-    $red:     #F27474;
-    $orange:  #F8BB86;
-    $blue:    #C9DAE1;
-    $green:   #A5DC86;
+    $red:     #dd4b39;
+    $orange:  #f39c12;
+    $blue:    #00c0ef;
+    $green:   #00a65a;
 
-    width: 80px;
-    height: 80px;
+
+    width: 50px;
+    height: 50px;
     border: 4px solid gray;
     -webkit-border-radius: 40px;
     border-radius: 40px;
@@ -315,21 +316,21 @@ body.stop-scrolling {
       .sa-line {
         position: absolute;
         height: 5px;
-        width: 47px;
+        width: 37px;
         background-color: $red;
         display: block;
-        top: 37px;
+        top: 23px;
         border-radius: 2px;
 
         &.sa-left {
           -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-          left: 17px;
+          left: 7px;
         }
         &.sa-right {
           -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-          right: 16px;
+          right: 7px;
         }
       }
     }
@@ -339,7 +340,7 @@ body.stop-scrolling {
       .sa-body { // Exclamation mark body
         position: absolute;
         width: 5px;
-        height: 47px;
+        height: 20px;
         left: 50%;
         top: 10px;
         -webkit-border-radius: 2px;
@@ -366,9 +367,9 @@ body.stop-scrolling {
         content: "";
         position: absolute;
         width: 5px;
-        height: 29px;
+        height: 20px;
         left: 50%;
-        bottom: 17px;
+        bottom: 8px;
         border-radius: 2px;
         margin-left: -2px;
         background-color: $blue;
@@ -380,7 +381,7 @@ body.stop-scrolling {
         height: 7px;
         border-radius: 50%;
         margin-left: -3px;
-        top: 19px;
+        top: 9px;
         background-color: $blue;
         left: 50%;
       }
@@ -424,8 +425,8 @@ body.stop-scrolling {
       }
 
       .sa-placeholder { // Ring
-        width: 80px;
-        height: 80px;
+        width: 50px;
+        height: 50px;
         border: 4px solid rgba($green, 0.2);
         -webkit-border-radius: 40px;
         border-radius: 40px;
@@ -440,11 +441,11 @@ body.stop-scrolling {
 
       .sa-fix { // Hide corners left from animation
         width: 5px;
-        height: 90px;
+        height: 60px;
         background-color: white;
 
         position: absolute;
-        left: 28px;
+        left: 13px;
         top: 8px;
         z-index: 1;
 
@@ -462,19 +463,19 @@ body.stop-scrolling {
         z-index: 2;
 
         &.sa-tip {
-          width: 25px;
+          width: 16px;
 
-          left: 14px;
-          top: 46px;
+          left: 8px;
+          top: 26px;
 
           -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
         }
         &.sa-long {
-          width: 47px;
+          width: 32px;
 
-          right: 8px;
-          top: 38px;
+          right: 3px;
+          top: 22px;
 
           -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
@@ -576,21 +577,21 @@ body.stop-scrolling {
 // Success icon animation
 
 @include keyframes(animateSuccessTip) {
-  0%    { width: 0;     left: 1px;    top: 19px; }
-  54%   { width: 0;     left: 1px;    top: 19px; }
-  70%   { width: 50px;  left: -8px;   top: 37px; }
-  84%   { width: 17px;  left: 21px;   top: 48px; }
-  100%  { width: 25px;  left: 14px;   top: 45px; }
+  0%    { width: 0;     left: -1px;    top: 17px; }
+  54%   { width: 0;     left: -1px;    top: 17px; }
+  70%   { width: 30px;  left: -8px;   top: 37px; }
+  84%   { width: 10px;  left: 21px;   top: 48px; }
+  100%  { width: 16px;  left: 14px;   top: 45px; }
 }
 @include keyframes(animateSuccessLong) {
   0%    { width: 0;     right: 46px;  top: 54px; }
   65%   { width: 0;     right: 46px;  top: 54px; }
-  84%   { width: 55px;  right: 0px;   top: 35px; }
-  100%  { width: 47px;  right: 8px;   top: 38px; }
+  84%   { width: 38px;  right: 0px;   top: 35px; }
+  100%  { width: 32px;  right: 8px;   top: 38px; }
 }
 @include keyframes(rotatePlaceholder) {
   0%    { transform: rotate(-45deg);  -webkit-transform: rotate(-45deg);  }
-  5%    { transform: rotate(-45deg);  -webkit-transform: rotate(-45deg);    }
+  5%    { transform: rotate(-45deg);  -webkit-transform: rotate(-45deg);  }
   12%   { transform: rotate(-405deg); -webkit-transform: rotate(-405deg); }
   100%  { transform: rotate(-405deg); -webkit-transform: rotate(-405deg); }
 }
