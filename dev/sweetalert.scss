@@ -404,7 +404,7 @@ body.stop-scrolling {
       &::before {
         -webkit-border-radius: 120px 0 0 120px;
         border-radius: 120px 0 0 120px;
-        top: -7px;
+        top: -17px;
         left: -33px;
 
          -webkit-transform: rotate(-45deg);
@@ -415,7 +415,7 @@ body.stop-scrolling {
       &::after {
         -webkit-border-radius: 0 120px 120px 0;
         border-radius: 0 120px 120px 0;
-        top: -11px;
+        top: -21px;
         left: 30px;
 
         -webkit-transform: rotate(-45deg);
@@ -440,13 +440,13 @@ body.stop-scrolling {
       }
 
       .sa-fix { // Hide corners left from animation
-        width: 5px;
-        height: 60px;
+        width: 7px;
+        height: 70px;
         background-color: white;
 
         position: absolute;
-        left: 13px;
-        top: 8px;
+        left: 16px;
+        top: -2px;
         z-index: 1;
 
         -webkit-transform: rotate(-45deg);
@@ -577,17 +577,17 @@ body.stop-scrolling {
 // Success icon animation
 
 @include keyframes(animateSuccessTip) {
-  0%    { width: 0;     left: -1px;    top: 17px; }
-  54%   { width: 0;     left: -1px;    top: 17px; }
-  70%   { width: 30px;  left: -8px;   top: 37px; }
-  84%   { width: 10px;  left: 21px;   top: 48px; }
-  100%  { width: 16px;  left: 14px;   top: 45px; }
+  0%    { width: 0;     left: -4px;    top: 13px; }
+  54%   { width: 0;     left: -2px;    top: 9px; }
+  70%   { width: 30px;  left: 0px;   top: 19px; }
+  84%   { width: 16px;  left: 8px;   top: 27px; }
+  100%  { width: 18px;  left: 8px;   top: 27px; }
 }
 @include keyframes(animateSuccessLong) {
-  0%    { width: 0;     right: 46px;  top: 54px; }
-  65%   { width: 0;     right: 46px;  top: 54px; }
-  84%   { width: 38px;  right: 0px;   top: 35px; }
-  100%  { width: 32px;  right: 8px;   top: 38px; }
+  0%    { width: 0;     right: 46px;  top: 13px; }
+  70%   { width: 0;     right: 25px;  top: 27px; }
+  84%   { width: 28px;  right: 6px;   top: 22px; }
+  100%  { width: 32px;  right: 3px;   top: 22px; }
 }
 @include keyframes(rotatePlaceholder) {
   0%    { transform: rotate(-45deg);  -webkit-transform: rotate(-45deg);  }
