@@ -191,11 +191,11 @@ body.stop-scrolling {
     .sweet-alert button:active {
       background-color: #307095; }
     .sweet-alert button.cancel {
-      background-color: #f4f4f4; }
+      background-color: #cacaca; }
       .sweet-alert button.cancel:hover {
-        background-color: #ececec; }
+        background-color: #c2c2c2; }
       .sweet-alert button.cancel:active {
-        background-color: #dbdbdb; }
+        background-color: #b1b1b1; }
       .sweet-alert button.cancel:focus {
         box-shadow: rgba(197, 205, 211, 0.8) 0px 0px 2px, rgba(0, 0, 0, 0.0470588) 0px 0px 0px 1px inset !important; }
     .sweet-alert button[disabled] {
